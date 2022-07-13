@@ -1,0 +1,62 @@
+// LSAM_GUI.idl : LSAM_GUI.exe에 대한 형식 라이브러리 소스
+
+// 이 파일은 MIDL 컴파일러에 의해 처리되어
+// 형식 라이브러리(LSAM_GUI.tlb)를 생성합니다.
+
+#include "olectl.h"
+[ uuid(B7EE2888-DB4D-4665-BFE1-214E5369056B), version(1.0) ]
+library LSAM_GUI
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CLSAM_GUIDoc의 기본 디스패치 인터페이스
+	
+	[ uuid(D0E2FB43-5655-4F30-9D35-43B8230E9D02) ]
+	dispinterface ILSAM_GUI
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  CLSAM_GUIDoc의 클래스 정보
+	
+	[ uuid(873568C0-64A6-4379-8769-3E69CEEEAFF9) ]
+	coclass LSAM_GUI
+	{
+		[default] dispinterface ILSAM_GUI;
+	};
+	//  LSAM_Config의 기본 디스패치 인터페이스입니다.
+		
+	[ uuid(A66129B0-442B-4E4D-B974-0D81FE968A3E) ]
+	dispinterface ILSAM_Config
+	{
+		properties:
+		methods:
+	};
+
+	//  LSAM_Config의 클래스 정보입니다.
+
+	[ uuid(6D59744A-1DCA-4BB4-9A98-F911AF330922) ]
+	coclass LSAM_Config
+	{
+		[default] dispinterface ILSAM_Config;
+	};
+	//  LSAM_ParamSet의 기본 디스패치 인터페이스입니다.
+		
+	[ uuid(9BE3EAEB-69CB-4002-8CED-ECC808C8CFDC) ]
+	dispinterface ILSAM_ParamSet
+	{
+		properties:
+		methods:
+	};
+
+	//  LSAM_ParamSet의 클래스 정보입니다.
+
+	[ uuid(B1A9513E-15A4-41C2-BEA0-400A4A181604) ]
+	coclass LSAM_ParamSet
+	{
+		[default] dispinterface ILSAM_ParamSet;
+	};
+};
